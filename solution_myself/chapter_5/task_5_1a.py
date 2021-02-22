@@ -25,6 +25,6 @@ london_co = {
 }
 
 device = input("Выбирите усройство из представленных (r1,r2,sw1)")
+parametr = input("Введите необходимый параметр")
 
-print(london_co[device])
-
+print(london_co[device][parametr])
