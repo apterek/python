@@ -16,6 +16,10 @@ access_or_trunk = input('Введите режим работы интерфей
 interface = input('Введите тип и номер интерфейса: \n')
 vlans = input('Введите номер влан(ов): \n')
 
-print(type(access_template))
+vclb = {"access" : access_template,"trunk" : trunk_template}
+mode = vclb[access_or_trunk]
+print('interface{}'.format(interface))
+print('\n'.join(mode).format(vlans))
+
 
 
